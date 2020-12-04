@@ -70,20 +70,7 @@ const createRequest = {
   post: (base, path, options, headers) => {
     return axios(base, "post", path, { data: { ...options } }, headers);
   },
-
-  /**
-   *
-   * Helpful method for put requests.
-   *
-   * @param base
-   * @param path
-   * @param options
-   * @return {Promise}
-   */
-  post: (base, path, options, headers) => {
-    return axios(base, "put", path, { data: { ...options } }, headers);
-  },
-
+  
   /**
    *
    * Helpful method for get requests.
